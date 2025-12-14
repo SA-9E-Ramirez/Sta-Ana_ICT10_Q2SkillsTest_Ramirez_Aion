@@ -46,6 +46,15 @@ club_info = {
                 "advisor": "Mr. Omnes",
                 "members": 51,
                 "category": "Arts"
+            },
+            "": {
+                "name": "",
+                "description": "",
+                "meeting_time": "",
+                "location": "",
+                "advisor": "",
+                "members": "",
+                "category": ""
             }
         }
         
@@ -65,3 +74,4 @@ def show_club_info(e):
             """
 
     display(output, target="club-info")
+
