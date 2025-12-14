@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffee00; /* Light maroon tint */
+            color: #8400ff; /* Dark maroon text */
+        }
+        h1 {
+            color: #020080; /* Maroon */
+            text-align: center;
+            border-bottom: 2px solid #020080;
+            padding-bottom: 10px;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #020080;
+            border-radius: 4px;
+            background-color: white;
+            color: #8400ff;
+        }
+        button {
+            background-color: #020080;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #600000; /* Darker maroon */
+        }
+        #club-info {
+            background-color: #ffee00; /* Very light maroon tint */
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #020080;
+            color: #8400ff;
+        }
+        label {
+            font-weight: bold;
+            color: #020080;
+        }
+        option {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Club Data File</h1>
+    
+    <label for="club-select">Pick a club:</label>
+    <select id="club-select">
+        <option value="">-- Pick a club --</option>
+        <option value="chess">Chess Club</option>
+        <option value="drama">Drama Club</option>
+        <option value="robotics">Robotics Club</option>
+        <option value="debate">Debate Club</option>
+        <option value="art">Art Club</option>
+    </select>
+    
+    <button id="show-info" py-click="show_club_info">Show Club Data</button>
+    
+    <pre id="club-info"></pre>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
