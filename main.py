@@ -29,7 +29,7 @@ club_info = {
                 "members": 743,
                 "category": "Academic"
             },
-            "debate": {
+            "food": {
                 "name": "Food Club",
                 "description": "If breaktime was mandatory overtime.",
                 "meeting_time": "Every Friday 3:30-5:00 PM",
@@ -63,4 +63,5 @@ def show_club_info(e):
             Number of Members: {info['members']}
             Category: {info['category']}
             """
+
     display(output, target="club-info")
